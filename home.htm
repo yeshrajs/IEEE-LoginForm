@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="4; url= http://nitp.ac.in/"> -->
+    <title>Document</title>
+
+    
+
+  <style>
+     body {
+        background-image: url("/../img/space-gc93caa350_1920.jpg");
+background-size:auto;
+background-repeat: no-repeat;
+
+    } 
+    .content{
+      font-size: 50px;
+      text-align: center;
+      font-weight: 500;
+      color:rgb(103, 219, 235);
+      height:50vh;
+      background-color: rgba(122, 122, 123,0.8);
+      margin: 10% 30% 0 30% ;
+      padding-top: 5rem;
+      border-radius: 5%;
+
+    }
+    .footer{
+      color: aliceblue;
+    opacity: .7;
+    float: right;
+    margin-top:10vh ;
+    font-size: 14px;
+    }
+    
+  </style>
+</head>
+<body>
+   <div class="content">
+    Welcome..... <br>
+    <span id="result"></span> <br>
+    to
+    IEEE-NITP.
+  </div> 
+  <div class="footer">
+    You will be redirected to NITP website......
+  </div>
+    <script>
+      document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+      
+    </script>
+</body>
+</html>
